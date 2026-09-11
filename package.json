@@ -1,8 +1,8 @@
 {
-  "name": "linzo-mit",
+  "name": "samvaad-ai",
   "version": "1.0.0",
   "private": true,
-  "description": "Linzo - AI-Powered Adaptive, Inclusive & Accessible Video Meeting Platform",
+  "description": "Samvaad AI - AI-Powered Adaptive, Inclusive & Accessible Video Meeting Platform",
   "scripts": {
     "dev:client": "npm run dev --prefix client",
     "dev:server": "npm run dev --prefix server",
@@ -20,6 +20,6 @@
     "braille",
     "inclusive-meetings"
   ],
-  "author": "Linzo Team (Rahul Rushi Sonkusare, Sarang Kadukar)",
+  "author": "Samvaad AI Team (Rahul Rushi Sonkusare, Sarang Kadukar)",
   "license": "MIT"
 }

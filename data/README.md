@@ -1,6 +1,6 @@
-# Linzo: Data Assets & Reference Datasets
+# Samvaad AI: Data Assets & Reference Datasets
 
-This directory provides dataset manifests, vocabulary indices, accessibility persona profiles, and sample multimodal test fixtures utilized by Linzo's translation and semantic engine.
+This directory provides dataset manifests, vocabulary indices, accessibility persona profiles, and sample multimodal test fixtures utilized by Samvaad AI's translation and semantic engine.
 
 ---
 

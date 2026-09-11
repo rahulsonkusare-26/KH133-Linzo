@@ -60,7 +60,7 @@ router.post('/join', async (req, res) => {
     const newBreakdown = await getBreakdownFromDb();
 
     res.status(201).json({
-      message: 'Welcome to the Linzo waitlist!',
+      message: 'Welcome to the Samvaad AI waitlist!',
       total: BASE_TOTAL + newSignups,
       breakdown: {
         deaf: BASE_BREAKDOWN.deaf + newBreakdown.deaf,

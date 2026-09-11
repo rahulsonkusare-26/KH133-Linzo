@@ -27,7 +27,7 @@ const allowedOrigins = [
   'http://localhost:5174',
   'http://localhost:3000',
   'http://192.168.1.3:5173',
-  'https://www.linzo.in',
+  'https://www.samvaad.in',
   process.env.CLIENT_ORIGIN
 ].filter(Boolean);
 
@@ -64,7 +64,7 @@ app.use((req, res, next) => {
 });
 
 // DB
-const mongoUri = process.env.MONGO_URI || 'mongodb://localhost:27017/linzo_meet';
+const mongoUri = process.env.MONGO_URI || 'mongodb://localhost:27017/samvaad_ai';
 mongoose
   .connect(mongoUri)
   .then(() => console.log('MongoDB connected'))
@@ -84,7 +84,7 @@ app.get('/api/health', (req, res) => {
   res.json({
     ok: true,
     timestamp: new Date().toISOString(),
-    server: 'Linzo Meet Server',
+    server: 'Samvaad AI Server',
     version: '1.0.0'
   });
 });

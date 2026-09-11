@@ -18,7 +18,7 @@ const SignLanguageDemo = lazy(() => import('./pages/SignLanguageDemo.jsx'))
 const EgcmModuleDemo = lazy(() => import('./pages/EgcmModuleDemo.jsx'))
 const Profile = lazy(() => import('./pages/Profile.jsx'))
 const LandingPage = lazy(() => import('./pages/LandingPage.jsx'))
-const LinzoMeetPage = lazy(() => import('./pages/LinzoMeetPage.jsx'))
+const Samvaad AIMeetPage = lazy(() => import('./pages/Samvaad AIMeetPage.jsx'))
 
 import Loader from './components/Loader.jsx';
 import MainLayout from './components/MainLayout.jsx';
@@ -32,7 +32,7 @@ export default function App() {
           <Route path="/" element={<LandingPage />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<ComingSoon />} />
-          {/* <Route path="/linzomeet" element={<LinzoMeetPage />} /> */}
+          {/* <Route path="/samvaadmeet" element={<Samvaad AIMeetPage />} /> */}
 
           {/* Protected Routes Group */}
           <Route element={<ProtectedRoute />}>

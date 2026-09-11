@@ -69,7 +69,7 @@ export default defineConfig({
     global: 'globalThis',
   },
   server: {
-    allowedHosts: ['localhost', '127.0.0.1', "linzo-meet.vercel.app", "linzo-meet-backend.onrender.com"],
+    allowedHosts: ['localhost', '127.0.0.1', "samvaad-ai.vercel.app", "samvaad-ai-backend.onrender.com"],
     headers: {
       // Relaxed COOP/COEP to allow CDN resources (like ONNX WASM files) to load
       // 'Cross-Origin-Embedder-Policy': 'require-corp',  // Commented out to allow CDN WASM loading

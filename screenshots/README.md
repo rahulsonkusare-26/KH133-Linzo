@@ -1,11 +1,11 @@
 # Platform Screenshots & User Interface Walkthrough
 
-This directory contains real-world captures of the Linzo platform user interface in operation.
+This directory contains real-world captures of the Samvaad AI platform user interface in operation.
 
 ---
 
 ## 1. Landing Page (`screenshot-1.png`)
-![Linzo Landing](screenshot-1.png)
+![Samvaad AI Landing](screenshot-1.png)
 
 - **Headline**: "Connect Beyond Every Barrier"
 - **Features Highlighted**:
@@ -17,7 +17,7 @@ This directory contains real-world captures of the Linzo platform user interface
 ---
 
 ## 2. Meeting Console & Dashboard (`screenshot-2.png`)
-![Linzo Dashboard](screenshot-2.png)
+![Samvaad AI Dashboard](screenshot-2.png)
 
 - **Headline**: "Connect Without Limits"
 - **Console Features**:

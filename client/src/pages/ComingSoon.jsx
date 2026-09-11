@@ -1,8 +1,8 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import api from '../lib/api';
-import logo from '../assets/linzo-logo.png';
-import './LinzoMeetPage.css';
+import logo from '../assets/samvaad-logo.png';
+import './Samvaad AIMeetPage.css';
 
 function useAnimatedNumber(value) {
   const [display, setDisplay] = useState(value);
@@ -99,41 +99,41 @@ const ComingSoon = () => {
     };
 
     return (
-        <div className="linzomeet-page min-h-screen min-h-[100dvh] text-slate-800 font-sans overflow-x-hidden flex flex-col justify-between relative">
+        <div className="samvaadmeet-page min-h-screen min-h-[100dvh] text-slate-800 font-sans overflow-x-hidden flex flex-col justify-between relative">
             {/* Animated background */}
-            <div className="linzomeet-bg" aria-hidden="true">
-                <div className="linzomeet-mesh" />
-                <div className="linzomeet-orb linzomeet-orb-1" />
-                <div className="linzomeet-orb linzomeet-orb-2" />
-                <div className="linzomeet-orb linzomeet-orb-3" />
-                <div className="linzomeet-grid" />
-                <div className="linzomeet-noise" />
+            <div className="samvaadmeet-bg" aria-hidden="true">
+                <div className="samvaadmeet-mesh" />
+                <div className="samvaadmeet-orb samvaadmeet-orb-1" />
+                <div className="samvaadmeet-orb samvaadmeet-orb-2" />
+                <div className="samvaadmeet-orb samvaadmeet-orb-3" />
+                <div className="samvaadmeet-grid" />
+                <div className="samvaadmeet-noise" />
             </div>
 
-            <div className="linzomeet-wrap w-full max-w-md md:max-w-lg mx-auto px-6 py-12 flex-1 flex flex-col justify-center relative z-10">
+            <div className="samvaadmeet-wrap w-full max-w-md md:max-w-lg mx-auto px-6 py-12 flex-1 flex flex-col justify-center relative z-10">
                 {/* Header */}
-                <header className="linzomeet-enter linzomeet-enter-d1 flex flex-col items-center gap-4 mb-10 text-center">
+                <header className="samvaadmeet-enter samvaadmeet-enter-d1 flex flex-col items-center gap-4 mb-10 text-center">
                     <button
                         type="button"
                         onClick={() => navigate('/')}
                         className="flex items-center justify-center gap-3 group focus:outline-none"
-                        aria-label="Linzo home"
+                        aria-label="Samvaad AI home"
                     >
                         <img
                             src={logo}
-                            alt="Linzo"
+                            alt="Samvaad AI"
                             className="h-12 w-auto object-contain transition-transform duration-300 group-active:scale-95"
                         />
                     </button>
-                    <span className="linzomeet-badge inline-flex items-center justify-center gap-2 px-4 py-2 rounded-full text-xs font-semibold text-[#684CFE]">
-                        <span className="w-2 h-2 rounded-full bg-emerald-500 linzomeet-live-dot" />
+                    <span className="samvaadmeet-badge inline-flex items-center justify-center gap-2 px-4 py-2 rounded-full text-xs font-semibold text-[#684CFE]">
+                        <span className="w-2 h-2 rounded-full bg-emerald-500 samvaadmeet-live-dot" />
                         Platform Coming Soon
                     </span>
                 </header>
 
                 {/* Coming Soon content card */}
-                <div className={`linzomeet-enter linzomeet-enter-d2 linzomeet-surface rounded-3xl p-6 sm:p-10 shadow-2xl relative ${countPop ? 'linzomeet-count-pop' : ''}`}>
-                    <div className="linzomeet-surface-glow" aria-hidden />
+                <div className={`samvaadmeet-enter samvaadmeet-enter-d2 samvaadmeet-surface rounded-3xl p-6 sm:p-10 shadow-2xl relative ${countPop ? 'samvaadmeet-count-pop' : ''}`}>
+                    <div className="samvaadmeet-surface-glow" aria-hidden />
                     
                     {success ? (
                         /* Google Pay style Success Screen */
@@ -167,7 +167,7 @@ const ComingSoon = () => {
                             <button
                                 type="button"
                                 onClick={() => setSuccess(false)}
-                                className="linzomeet-cta-btn w-full py-3.5 rounded-2xl bg-[#684CFE] text-white font-bold hover:bg-[#5338d4] active:scale-[0.98] transition-all shadow-lg shadow-[#684CFE]/25 cursor-pointer flex items-center justify-center"
+                                className="samvaadmeet-cta-btn w-full py-3.5 rounded-2xl bg-[#684CFE] text-white font-bold hover:bg-[#5338d4] active:scale-[0.98] transition-all shadow-lg shadow-[#684CFE]/25 cursor-pointer flex items-center justify-center"
                             >
                                 Back to Waitlist
                             </button>
@@ -176,7 +176,7 @@ const ComingSoon = () => {
                         /* Signup Form Screen */
                         <div className="relative z-10">
                             <h1 className="text-4xl md:text-5xl font-black text-slate-900 text-center mb-4 tracking-tight leading-none">
-                                Coming <span className="linzomeet-gradient-text">Soon</span>
+                                Coming <span className="samvaadmeet-gradient-text">Soon</span>
                             </h1>
 
                             <p className="text-slate-500 text-sm md:text-base text-center leading-relaxed mb-8 max-w-md mx-auto">
@@ -192,12 +192,12 @@ const ComingSoon = () => {
                                                                     {loadingStats ? (
                                         <div className="flex items-center justify-center py-1">
                                             {/* Full skeleton loader to represent the entire waitlist counter */}
-                                            <div className="linzomeet-skeleton h-10 w-28 rounded-2xl" />
+                                            <div className="samvaadmeet-skeleton h-10 w-28 rounded-2xl" />
                                         </div>
                                     ) : (
                                         <div className="flex items-center justify-center">
                                             {/* Complete single number (e.g. 201) animated smoothly */}
-                                            <span className={`text-4xl sm:text-5xl font-black linzomeet-gradient-text font-mono tracking-tight transition-transform duration-300 ${countPop ? 'scale-110' : ''}`}>
+                                            <span className={`text-4xl sm:text-5xl font-black samvaadmeet-gradient-text font-mono tracking-tight transition-transform duration-300 ${countPop ? 'scale-110' : ''}`}>
                                                 {animatedTotal}
                                             </span>
                                         </div>
@@ -215,7 +215,7 @@ const ComingSoon = () => {
                                         placeholder="Enter your email address"
                                         value={email}
                                         onChange={(e) => setEmail(e.target.value)}
-                                        className="linzomeet-input w-full px-5 py-4 rounded-2xl bg-white border-2 border-slate-200 focus:border-[#684CFE] focus:ring-0 outline-none transition-all shadow-sm text-slate-900 text-base"
+                                        className="samvaadmeet-input w-full px-5 py-4 rounded-2xl bg-white border-2 border-slate-200 focus:border-[#684CFE] focus:ring-0 outline-none transition-all shadow-sm text-slate-900 text-base"
                                         required
                                         disabled={submitting}
                                     />
@@ -230,7 +230,7 @@ const ComingSoon = () => {
                                 <button
                                     type="submit"
                                     disabled={submitting}
-                                    className="linzomeet-cta-btn w-full py-4 rounded-2xl bg-[#684CFE] text-white font-bold hover:bg-[#5338d4] disabled:opacity-60 disabled:cursor-not-allowed active:scale-[0.98] transition-all shadow-xl shadow-[#684CFE]/20 cursor-pointer flex items-center justify-center"
+                                    className="samvaadmeet-cta-btn w-full py-4 rounded-2xl bg-[#684CFE] text-white font-bold hover:bg-[#5338d4] disabled:opacity-60 disabled:cursor-not-allowed active:scale-[0.98] transition-all shadow-xl shadow-[#684CFE]/20 cursor-pointer flex items-center justify-center"
                                 >
                                     {submitting ? 'Securing Spot...' : 'Join Exclusive Waitlist'}
                                 </button>
@@ -240,7 +240,7 @@ const ComingSoon = () => {
                 </div>
 
                 {/* Additional action/info links */}
-                <div className="linzomeet-enter linzomeet-enter-d3 mt-8 flex justify-center gap-6 text-sm font-bold text-[#684CFE]">
+                <div className="samvaadmeet-enter samvaadmeet-enter-d3 mt-8 flex justify-center gap-6 text-sm font-bold text-[#684CFE]">
                     <button
                         type="button"
                         onClick={() => navigate('/login')}
@@ -260,8 +260,8 @@ const ComingSoon = () => {
             </div>
 
             {/* Footer */}
-            <footer className="linzomeet-enter linzomeet-enter-d5 text-center text-[11px] sm:text-xs text-slate-400 py-6 leading-relaxed mt-auto relative z-10">
-                <p>© {new Date().getFullYear()} Linzo · Adaptive Multimodal Communication</p>
+            <footer className="samvaadmeet-enter samvaadmeet-enter-d5 text-center text-[11px] sm:text-xs text-slate-400 py-6 leading-relaxed mt-auto relative z-10">
+                <p>© {new Date().getFullYear()} Samvaad AI · Adaptive Multimodal Communication</p>
             </footer>
         </div>
     );

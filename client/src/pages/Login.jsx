@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import api, { setAuthToken } from '../lib/api';
-import logo from '../assets/linzo-logo.png';
+import logo from '../assets/samvaad-logo.png';
 
 const Login = () => {
   const [formData, setFormData] = useState({ email: '', password: '' });
@@ -35,10 +35,10 @@ const Login = () => {
       <div className="w-full max-w-md bg-white border border-slate-200 rounded-3xl shadow-xl shadow-indigo-100/50 px-6 py-6 sm:px-8">
         <div className="text-center mb-6">
           <div className="inline-flex items-center justify-center h-28 w-auto mb-4">
-            <img src={logo} alt="Linzo Logo" className="h-full w-auto object-contain" />
+            <img src={logo} alt="Samvaad AI Logo" className="h-full w-auto object-contain" />
           </div>
           <h2 className="text-2xl font-bold text-slate-900 tracking-tight">Welcome Back</h2>
-          <p className="text-sm text-slate-600 mt-1">Sign in to your Linzo Meet account</p>
+          <p className="text-sm text-slate-600 mt-1">Sign in to your Samvaad AI account</p>
         </div>
 
         <form className="space-y-4" onSubmit={handleSubmit}>

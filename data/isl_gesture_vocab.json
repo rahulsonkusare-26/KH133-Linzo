@@ -1,5 +1,5 @@
 {
-  "dataset": "Linzo-ISL-Vocabulary-v1",
+  "dataset": "Samvaad AI-ISL-Vocabulary-v1",
   "language": "Indian Sign Language (ISL)",
   "total_tokens": 30,
   "modalities": ["fingerspelling", "word_signs"],

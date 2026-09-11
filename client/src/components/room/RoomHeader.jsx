@@ -1,5 +1,5 @@
 import React from 'react';
-import LinzoLogo from '../../assets/linzo-logo.png';
+import Samvaad AILogo from '../../assets/samvaad-logo.png';
 
 /**
  * RoomHeader — Compact top bar.
@@ -86,7 +86,7 @@ const RoomHeader = ({
 
             {/* ── LEFT GROUP: Logo | Room | Status ── */}
             <div className="flex items-center gap-2 sm:gap-3 min-w-0">
-                <img src={LinzoLogo} alt="Linzo" className="h-5 sm:h-[26px] w-auto flex-shrink-0" />
+                <img src={Samvaad AILogo} alt="Samvaad AI" className="h-5 sm:h-[26px] w-auto flex-shrink-0" />
 
                 <div className="hidden md:block w-px h-5 bg-slate-100" />
 

@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import api, { setAuthToken } from '../lib/api';
-import logo from '../assets/linzo-logo.png';
-import landingImg1 from '../assets/linzo-landing-img2.png';
+import logo from '../assets/samvaad-logo.png';
+import landingImg1 from '../assets/samvaad-landing-img2.png';
 
 const LandingPage = () => {
     const navigate = useNavigate();
@@ -60,7 +60,7 @@ const LandingPage = () => {
                 >
                     <div className="flex items-center gap-3">
                         <div className="h-[40px] sm:h-[45px] w-auto flex items-center justify-center transition-transform hover:scale-105 cursor-pointer" onClick={() => navigate('/')}>
-                            <img src={logo} alt="Linzo Logo" className="w-full h-full object-contain drop-shadow-sm" />
+                            <img src={logo} alt="Samvaad AI Logo" className="w-full h-full object-contain drop-shadow-sm" />
                         </div>
                     </div>
 
@@ -156,7 +156,7 @@ const LandingPage = () => {
                                 </Link>
                                 <a href="#technology" className="flex-1 sm:flex-none px-4 sm:px-8 py-2.5 sm:py-4 text-xs sm:text-base font-semibold text-slate-700 bg-white hover:bg-slate-50 border border-slate-200 hover:border-indigo-300 rounded-xl sm:rounded-2xl transition-all shadow-sm hover:shadow-md flex items-center justify-center gap-1.5 sm:gap-2 whitespace-nowrap">
                                     <svg className="w-4 h-4 sm:w-5 sm:h-5 text-[#684CFE] hidden sm:block" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 21l-7-7 7-7M21 21l-7-7 7-7" /></svg>
-                                    Why Linzo?
+                                    Why Samvaad AI?
                                 </a>
                             </div>
                         </div>
@@ -168,7 +168,7 @@ const LandingPage = () => {
                                 <div className="absolute inset-0 bg-[#684CFE] rounded-full blur-[80px] opacity-10 z-0 pointer-events-none"></div>
                                 <img
                                     src={landingImg1}
-                                    alt="Linzo Meet Virtual Meeting Dashboard"
+                                    alt="Samvaad AI Virtual Meeting Dashboard"
                                     className="relative z-10 w-full h-auto object-contain mix-blend-multiply opacity-95 scale-105"
                                 />
                             </div>
@@ -180,10 +180,10 @@ const LandingPage = () => {
                 <section id="technology" className="pt-6 pb-0 sm:py-24 bg-white relative border-t border-slate-100">
                     <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                         <div className="text-center mb-16 animate-fade-in-up">
-                            <h2 className="text-xs font-bold tracking-[0.2em] text-[#684CFE] uppercase mb-4">Why Linzo?</h2>
+                            <h2 className="text-xs font-bold tracking-[0.2em] text-[#684CFE] uppercase mb-4">Why Samvaad AI?</h2>
                             <h3 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 mb-6 tracking-tight">Communication in Real-Time</h3>
                             <p className="text-lg text-slate-500 max-w-3xl mx-auto leading-relaxed">
-                                Traditional accessibility tools are slow and intrusive. Linzo uses private, on-device AI to enable seamless interaction without lag or hardware limitations.
+                                Traditional accessibility tools are slow and intrusive. Samvaad AI uses private, on-device AI to enable seamless interaction without lag or hardware limitations.
                             </p>
                         </div>
 
@@ -217,7 +217,7 @@ const LandingPage = () => {
                                 </div>
                                 <h4 className="text-xl font-bold text-slate-900 mb-4">Perfect Sync</h4>
                                 <p className="text-slate-600 text-sm leading-relaxed">
-                                    Whether you're signing, speaking, or typing, Linzo aligns everything so no one falls behind. Everyone hears and sees a synchronized interaction.
+                                    Whether you're signing, speaking, or typing, Samvaad AI aligns everything so no one falls behind. Everyone hears and sees a synchronized interaction.
                                 </p>
                             </div>
                         </div>
@@ -231,7 +231,7 @@ const LandingPage = () => {
                             <h2 className="text-xs font-bold tracking-[0.2em] text-[#684CFE] uppercase mb-4">Adaptive Interface</h2>
                             <h3 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 mb-6 tracking-tight">Built for Every User</h3>
                             <p className="text-lg text-slate-500 max-w-3xl mx-auto leading-relaxed">
-                                Linzo adapts to you, not the other way around. Our interface dynamically modifies how information is presented based on your specific needs.
+                                Samvaad AI adapts to you, not the other way around. Our interface dynamically modifies how information is presented based on your specific needs.
                             </p>
                         </div>
 
@@ -294,7 +294,7 @@ const LandingPage = () => {
                             <div className="flex-1">
                                 <h2 className="text-xs font-bold tracking-[0.2em] text-indigo-400 uppercase mb-4">Total Inclusion</h2>
                                 <h3 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold mb-4 tracking-tight">Your Meeting, Your Way</h3>
-                                <p className="text-lg text-slate-400 max-w-2xl mx-auto md:mx-0">Inclusive design isn't just a feature—it's how Linzo was built from the ground up.</p>
+                                <p className="text-lg text-slate-400 max-w-2xl mx-auto md:mx-0">Inclusive design isn't just a feature—it's how Samvaad AI was built from the ground up.</p>
                             </div>
                             <Link to="/register" className="px-6 py-3 rounded-full bg-white/10 hover:bg-white/20 border border-white/20 transition-all font-semibold text-sm whitespace-nowrap">
                                 Create Free Profile
@@ -345,7 +345,7 @@ const LandingPage = () => {
                     <div className="hidden md:grid md:grid-cols-4 lg:grid-cols-5 gap-8 mb-16">
                         <div className="col-span-2 lg:col-span-2">
                             <div className="h-10 w-auto mb-6">
-                                <img src={logo} alt="Linzo Logo" className="h-full object-contain" />
+                                <img src={logo} alt="Samvaad AI Logo" className="h-full object-contain" />
                             </div>
                             <p className="text-slate-500 text-sm leading-relaxed max-w-xs mb-8">
                                 Pioneer of Call-Native Adaptive Multimodal Communication Systems. Elevating unified interactions for every cognitive profile.
@@ -399,7 +399,7 @@ const LandingPage = () => {
                         {/* Logo & Description */}
                         <div className="mb-8">
                             <div className="h-10 w-auto mb-5">
-                                <img src={logo} alt="Linzo Logo" className="h-full object-contain" />
+                                <img src={logo} alt="Samvaad AI Logo" className="h-full object-contain" />
                             </div>
                             <p className="text-slate-500 text-sm leading-relaxed max-w-xs mb-6">
                                 Pioneer of Call-Native Adaptive Multimodal Communication Systems. Elevating unified interactions for every cognitive profile.
@@ -487,7 +487,7 @@ const LandingPage = () => {
                     {/* Bottom bar */}
                     <div className="pt-8 border-t border-slate-100 flex flex-col items-center md:flex-row md:justify-between gap-4">
                         <p className="text-slate-400 text-xs sm:text-sm text-center md:text-left">
-                            &copy; {new Date().getFullYear()} LINZO Adaptive Communication. All rights reserved.
+                            &copy; {new Date().getFullYear()} Samvaad AI Adaptive Communication. All rights reserved.
                         </p>
                         <div className="flex flex-wrap justify-center gap-4 sm:gap-6 text-xs sm:text-sm text-slate-400">
                             <a href="#" className="hover:text-slate-600 transition-colors">Privacy Policy</a>

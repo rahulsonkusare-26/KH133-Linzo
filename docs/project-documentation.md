@@ -1,4 +1,4 @@
-# Linzo: Project Documentation & Architecture Specification
+# Samvaad AI: Project Documentation & Architecture Specification
 
 > **AI-Powered Adaptive, Inclusive & Accessible Video Meeting Platform**  
 > *Connect Beyond Every Barrier.*
@@ -7,7 +7,7 @@
 
 ## 1. Executive Summary
 
-Linzo is a next-generation video conferencing platform purpose-built for total communication accessibility. Traditional meeting software (Zoom, Google Meet, Microsoft Teams) assumes all participants can hear, speak, and see at standard capability. Linzo breaks down these barriers by providing an adaptive multimodal engine that bridges sign language, speech, text, haptics, and Braille in real time without compromising peer-to-peer video quality or latency.
+Samvaad AI is a next-generation video conferencing platform purpose-built for total communication accessibility. Traditional meeting software (Zoom, Google Meet, Microsoft Teams) assumes all participants can hear, speak, and see at standard capability. Samvaad AI breaks down these barriers by providing an adaptive multimodal engine that bridges sign language, speech, text, haptics, and Braille in real time without compromising peer-to-peer video quality or latency.
 
 ### Key Capabilities
 - **Real-time ISL (Indian Sign Language) Recognition**: Client-side MediaPipe landmark extraction coupled with quantized neural inference models to detect fingerspelling and sign gestures at 30 FPS.
@@ -20,9 +20,9 @@ Linzo is a next-generation video conferencing platform purpose-built for total c
 
 ## 2. System Architecture
 
-Linzo is architected around four decoupled, highly specialized modules:
+Samvaad AI is architected around four decoupled, highly specialized modules:
 
-![Linzo Architecture](architecture.png)
+![Samvaad AI Architecture](architecture.png)
 
 ### Architectural Modules:
 1. **Client Application (React + Vite + Tailwind)**:
@@ -60,7 +60,7 @@ Linzo is architected around four decoupled, highly specialized modules:
          │     [Quantized ONNX Gesture Classifier]
          │               │ (Recognized ISL Tokens)
          │               ▼
-         │     [Linzo Semantic Engine (Canonical Events)]
+         │     [Samvaad AI Semantic Engine (Canonical Events)]
          │               │
          │               ├─────────────▶ [Live Subtitles / AAC Symbol Grid]
          │               ├─────────────▶ [Speech Synthesis (TTS)]
@@ -80,7 +80,7 @@ Linzo is architected around four decoupled, highly specialized modules:
 Adhering strictly to standard hackathon submission conventions:
 
 ```
-Linzo-MIT/
+KH133-Samvaad AI/
 ├── .gitignore              # Git ignore rules for node_modules, dist, and env files
 ├── LICENSE                 # Official MIT License
 ├── README.md               # Primary project showcase with setup & demo guides
@@ -109,7 +109,7 @@ Linzo-MIT/
 ├── docs/                   # Architectural blueprints and engineering guides
 │   ├── architecture.png    # High-resolution system architecture blueprint
 │   ├── project-documentation.md # This comprehensive technical manual
-│   ├── LINZO_SEMANTIC_ENGINE.md # Semantic engine mathematical and technical spec
+│   ├── SAMVAAD_SEMANTIC_ENGINE.md # Semantic engine mathematical and technical spec
 │   └── other-diagrams/     # Sequence and data-flow specifications
 │
 ├── screenshots/            # Verified visual captures of the running platform
@@ -146,8 +146,8 @@ Linzo-MIT/
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/rahulsonkusare-26/Linzo-MIT.git
-cd Linzo-MIT
+git clone https://github.com/rahulsonkusare-26/KH133-Samvaad AI.git
+cd KH133-Samvaad AI
 ```
 
 ### 2. Install All Dependencies

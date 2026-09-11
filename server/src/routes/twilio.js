@@ -139,7 +139,7 @@ router.post('/voice', (req, res) => {
 // GET /api/twilio/voice - Debug TwiML generation (browser view)
 router.get('/voice', (req, res) => {
     const voiceResponse = new VoiceResponse();
-    voiceResponse.say('Welcome to Linzo Meet. This is a debug message.');
+    voiceResponse.say('Welcome to Samvaad AI. This is a debug message.');
     res.type('text/xml');
     res.send(voiceResponse.toString());
 });

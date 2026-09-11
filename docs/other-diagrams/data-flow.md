@@ -1,6 +1,6 @@
-# Linzo: Data Flow & Sequence Blueprints
+# Samvaad AI: Data Flow & Sequence Blueprints
 
-This document details the exact sequence and runtime event pipelines within the Linzo platform.
+This document details the exact sequence and runtime event pipelines within the Samvaad AI platform.
 
 ---
 
@@ -13,10 +13,10 @@ sequenceDiagram
     participant Server as Node.js Socket.io Signaling
     participant Bob as Bob (Non-Signer / Client B)
 
-    Alice->>Server: join-room { roomId: "linzo-meet-101", userId: "alice_01" }
+    Alice->>Server: join-room { roomId: "samvaad-ai-101", userId: "alice_01" }
     Server-->>Alice: room-joined { participants: [] }
 
-    Bob->>Server: join-room { roomId: "linzo-meet-101", userId: "bob_02" }
+    Bob->>Server: join-room { roomId: "samvaad-ai-101", userId: "bob_02" }
     Server-->>Alice: participant-joined { userId: "bob_02" }
     Server-->>Bob: room-joined { participants: ["alice_01"] }
 

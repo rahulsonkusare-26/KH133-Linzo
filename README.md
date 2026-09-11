@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🚀 Linzo Meet
+# 🚀 Samvaad AI
 
 ### **One Conversation. Every Modality. Every Participant.**
 
@@ -39,9 +39,9 @@ Yet nearly every communication platform built today assumes that every participa
 
 That assumption silently excludes hundreds of millions of people every single day.
 
-Linzo reimagines communication from first principles.
+Samvaad AI reimagines communication from first principles.
 
-Instead of translating one communication modality into another, Linzo first understands **what** a participant intends to communicate, then intelligently renders that meaning into the most appropriate output for every participant simultaneously.
+Instead of translating one communication modality into another, Samvaad AI first understands **what** a participant intends to communicate, then intelligently renders that meaning into the most appropriate output for every participant simultaneously.
 
 Rather than building separate pipelines such as
 
@@ -57,13 +57,13 @@ Speech → Translation
 Speech → Haptics
 ```
 
-Linzo introduces a **Unified Semantic Orchestration Engine**, transforming every communication modality into a shared semantic representation before dynamically generating personalized outputs.
+Samvaad AI introduces a **Unified Semantic Orchestration Engine**, transforming every communication modality into a shared semantic representation before dynamically generating personalized outputs.
 
 This architecture eliminates the traditional **N × N translation problem**, allowing new communication modalities to be integrated without redesigning the entire communication stack.
 
 ---
 
-# 🎯 Why Linzo?
+# 🎯 Why Samvaad AI?
 
 Existing accessibility solutions solve **individual communication problems.**
 
@@ -81,11 +81,11 @@ Braille devices assist visually impaired users.
 
 Every solution exists in isolation.
 
-Linzo unifies them into a **single communication infrastructure** capable of orchestrating conversations across different communication abilities, languages, devices, and accessibility requirements in real time.
+Samvaad AI unifies them into a **single communication infrastructure** capable of orchestrating conversations across different communication abilities, languages, devices, and accessibility requirements in real time.
 
 Instead of asking users to adapt to technology,
 
-**Linzo adapts technology to every participant.**
+**Samvaad AI adapts technology to every participant.**
 
 ---
 
@@ -151,13 +151,13 @@ without requiring individual translation pipelines.
 
 # 🏛 Philosophy
 
-Linzo is not designed to become another communication application.
+Samvaad AI is not designed to become another communication application.
 
 It is designed to become the **communication infrastructure** that existing communication platforms can build upon.
 
 Instead of replacing platforms like Zoom, Microsoft Teams, Google Meet, telephony providers, healthcare platforms, or enterprise collaboration suites,
 
-Linzo augments them through APIs, SDKs, and semantic communication orchestration.
+Samvaad AI augments them through APIs, SDKs, and semantic communication orchestration.
 
 ---
 
@@ -180,11 +180,11 @@ Linzo augments them through APIs, SDKs, and semantic communication orchestration
 
 ---
 
-# 🏆 What Makes Linzo Different?
+# 🏆 What Makes Samvaad AI Different?
 
 Traditional systems translate **formats.**
 
-Linzo understands **meaning.**
+Samvaad AI understands **meaning.**
 
 That single architectural decision enables unlimited combinations of communication modalities while keeping the system scalable, extensible, and future-proof.
 
@@ -200,7 +200,7 @@ Eye Gaze
 Unified Semantic Representation
         │
         ▼
-Linzo Orchestration Engine
+Samvaad AI Orchestration Engine
         │
  ┌──────┼────────┬─────────┐
  ▼      ▼        ▼         ▼
@@ -209,21 +209,21 @@ Voice  Avatar  Braille  Translation
 
 Communication should never decide who gets an opportunity.
 
-Linzo exists to ensure it never does.
+Samvaad AI exists to ensure it never does.
 
 ---
 
 # 🏗 System Architecture
 
-Unlike conventional accessibility platforms that rely on independent translation pipelines for every communication modality, Linzo introduces a **Unified Semantic Communication Architecture**, where all modalities converge into a shared semantic representation before being rendered into personalized outputs.
+Unlike conventional accessibility platforms that rely on independent translation pipelines for every communication modality, Samvaad AI introduces a **Unified Semantic Communication Architecture**, where all modalities converge into a shared semantic representation before being rendered into personalized outputs.
 
 This architecture dramatically reduces system complexity, enables seamless multimodal interoperability, and allows future communication modalities to be integrated without redesigning the communication engine.
 
 ---
 
-# 🧠 Linzo Unified Semantic Orchestration Engine
+# 🧠 Samvaad AI Unified Semantic Orchestration Engine
 
-The **Unified Semantic Orchestration Engine (USOE)** is the computational core of Linzo.
+The **Unified Semantic Orchestration Engine (USOE)** is the computational core of Samvaad AI.
 
 Instead of directly translating between modalities (Speech → Sign, Speech → Braille, Sign → Voice, etc.), every input first passes through a semantic abstraction layer where its **meaning, context, participant state, and conversation history** are unified into a single modality-independent representation.
 
@@ -257,7 +257,7 @@ The orchestration engine then dynamically renders this semantic state into the o
                     │
                     ▼
         ┌───────────────────────────┐
-        │ Linzo Orchestration Engine│
+        │ Samvaad AI Orchestration Engine│
         │                           │
         │ Context Management        │
         │ Participant Awareness     │
@@ -359,7 +359,7 @@ These modality-specific encoders operate independently while producing standardi
 
 ## ③ Unified Semantic Representation
 
-The core innovation of Linzo.
+The core innovation of Samvaad AI.
 
 Instead of translating
 
@@ -411,7 +411,7 @@ Advantages include
 
 ---
 
-## ④ Linzo Orchestration Engine
+## ④ Samvaad AI Orchestration Engine
 
 The orchestration engine continuously manages
 
@@ -577,7 +577,7 @@ Speech ↔ Eye Gaze
 
 As new modalities are introduced, the number of translation pipelines grows rapidly.
 
-Linzo replaces this with
+Samvaad AI replaces this with
 
 ```
 Every Input
@@ -593,7 +593,7 @@ Every Output
 
 reducing architectural complexity while enabling unlimited communication combinations across languages, accessibility technologies, and future interaction modalities.
 
-This semantic-first architecture transforms Linzo from an accessibility application into a scalable **AI-powered communication infrastructure** capable of supporting the next generation of inclusive communication systems.
+This semantic-first architecture transforms Samvaad AI from an accessibility application into a scalable **AI-powered communication infrastructure** capable of supporting the next generation of inclusive communication systems.
 
 ---
 
@@ -601,7 +601,7 @@ This semantic-first architecture transforms Linzo from an accessibility applicat
 
 ## AI Pipeline
 
-Linzo follows a **semantic-first multimodal AI pipeline**, where heterogeneous communication inputs are transformed into a unified semantic representation before adaptive rendering.
+Samvaad AI follows a **semantic-first multimodal AI pipeline**, where heterogeneous communication inputs are transformed into a unified semantic representation before adaptive rendering.
 
 ```
 Speech
@@ -627,7 +627,7 @@ Context-Aware Orchestration
 Adaptive Output Rendering
 ```
 
-Unlike traditional AI systems that perform direct modality-to-modality translation, Linzo separates **understanding** from **rendering**, enabling every communication modality to operate independently while remaining semantically synchronized.
+Unlike traditional AI systems that perform direct modality-to-modality translation, Samvaad AI separates **understanding** from **rendering**, enabling every communication modality to operate independently while remaining semantically synchronized.
 
 ---
 
@@ -722,7 +722,7 @@ Semantic Encoding
 Unified Semantic Representation
 ```
 
-Rather than transmitting raw video frames, Linzo processes **geometric landmark representations**, significantly reducing bandwidth while preserving communication semantics.
+Rather than transmitting raw video frames, Samvaad AI processes **geometric landmark representations**, significantly reducing bandwidth while preserving communication semantics.
 
 Advantages
 
@@ -825,7 +825,7 @@ Accessibility Preferences
 Language Preferences
 ```
 
-This allows Linzo to generate
+This allows Samvaad AI to generate
 
 - Context-aware translations
 - Personalized summaries
@@ -935,7 +935,7 @@ Participants
 
 # 🔒 Privacy by Design
 
-Rather than streaming raw camera feeds for AI processing, Linzo performs **on-device preprocessing** wherever possible.
+Rather than streaming raw camera feeds for AI processing, Samvaad AI performs **on-device preprocessing** wherever possible.
 
 Only compact semantic representations, landmarks, and communication metadata are exchanged when appropriate.
 
@@ -969,7 +969,7 @@ O(N²)
 
 ──────────────────────
 
-Linzo
+Samvaad AI
 
 Every Input
 
@@ -1017,7 +1017,7 @@ Each new modality simply connects to the Unified Semantic Layer through standard
 
 # 📊 Performance Optimizations
 
-Linzo incorporates several optimizations to support real-time communication.
+Samvaad AI incorporates several optimizations to support real-time communication.
 
 - Landmark Compression
 - Incremental State Synchronization
@@ -1034,7 +1034,7 @@ Linzo incorporates several optimizations to support real-time communication.
 
 # 🧪 Engineering Principles
 
-Linzo is designed around five core engineering principles.
+Samvaad AI is designed around five core engineering principles.
 
 **Semantic-first Communication**
 
@@ -1068,7 +1068,7 @@ Accessibility is treated as a first-class architectural concern rather than an o
 
 # 🚀 Innovation Highlights
 
-Linzo is not a collection of independent AI features.
+Samvaad AI is not a collection of independent AI features.
 
 It is a **communication operating layer** that abstracts communication into semantic representations, enabling any communication modality to interact with any other modality through a single orchestration architecture.
 
@@ -1096,7 +1096,7 @@ Speech → Haptics
 Speech → Eye Gaze
 ```
 
-Linzo converts every communication modality into a shared semantic state.
+Samvaad AI converts every communication modality into a shared semantic state.
 
 ```
 Speech
@@ -1125,7 +1125,7 @@ This reduces architectural complexity while enabling unlimited communication com
 
 Traditional communication systems understand **formats**.
 
-Linzo understands **meaning**.
+Samvaad AI understands **meaning**.
 
 Communication is first represented as semantic intent before being rendered into the preferred output modality of every participant.
 
@@ -1249,7 +1249,7 @@ The orchestration engine remains unchanged.
 
 Rather than replacing existing communication platforms,
 
-Linzo augments them.
+Samvaad AI augments them.
 
 Supported deployment models
 
@@ -1282,7 +1282,7 @@ Enterprise Collaboration
 
 ↓
 
-Linzo SDK
+Samvaad AI SDK
 ```
 
 Organizations can integrate accessibility capabilities without replacing their existing communication infrastructure.
@@ -1291,7 +1291,7 @@ Organizations can integrate accessibility capabilities without replacing their e
 
 # ⚡ Intelligent Meeting Layer
 
-Linzo transforms meetings into structured semantic knowledge.
+Samvaad AI transforms meetings into structured semantic knowledge.
 
 ```
 Conversation
@@ -1339,7 +1339,7 @@ Supported integrations
 
 Instead of transmitting continuous video streams for AI inference,
 
-Linzo extracts geometric landmarks locally.
+Samvaad AI extracts geometric landmarks locally.
 
 ```
 Camera
@@ -1415,7 +1415,7 @@ Every layer is independently extensible.
 
 # 📈 Engineering Advantages
 
-| Traditional Systems | Linzo |
+| Traditional Systems | Samvaad AI |
 |----------------------|--------|
 | Separate AI for each feature | Unified Semantic AI |
 | Multiple translation pipelines | Single orchestration engine |
@@ -1429,7 +1429,7 @@ Every layer is independently extensible.
 
 # 🔬 Research Contributions
 
-Linzo explores several research directions within multimodal AI and accessible communication.
+Samvaad AI explores several research directions within multimodal AI and accessible communication.
 
 ### Unified Semantic Communication
 
@@ -1463,7 +1463,7 @@ Automatic generation of structured semantic knowledge from multimodal conversati
 
 # 🌍 Future Research Roadmap
 
-Linzo is designed as a long-term communication infrastructure capable of supporting future interaction paradigms.
+Samvaad AI is designed as a long-term communication infrastructure capable of supporting future interaction paradigms.
 
 Potential extensions include
 
@@ -1495,18 +1495,18 @@ The Unified Semantic Architecture ensures that future communication technologies
 
 > **Communication should adapt to people, not people to communication.**
 
-Linzo is engineered around this principle.
+Samvaad AI is engineered around this principle.
 
 Every architectural decision, AI pipeline, accessibility feature, and communication workflow exists to ensure that every participant—regardless of language, disability, or communication preference—can contribute equally to the same conversation.
 
-Rather than building another communication application, Linzo lays the foundation for a universal communication infrastructure where inclusion is engineered into the architecture itself.
+Rather than building another communication application, Samvaad AI lays the foundation for a universal communication infrastructure where inclusion is engineered into the architecture itself.
 
 ---
 
 # 📂 Repository Structure
 
 ```
-Linzo-Meet
+Samvaad-AI
 │
 ├── client/
 │   ├── public/
@@ -1518,8 +1518,8 @@ Linzo-Meet
 │   │   │   ├── animations/        # Sign language gesture animation definitions & word maps
 │   │   │   └── models/            # 3D Avatar GLB models (HumanoidRetargeted, xbot, ybot)
 │   │   ├── components/            # Inspector dashboard, MasterTimelineVisualizer & EngineStatusBadge
-│   │   ├── context/               # LinzoEngineContext state provider & auth contexts
-│   │   ├── hooks/                 # Engine hooks (useLinzoEngine, useWebRTC)
+│   │   ├── context/               # SamvaadEngineContext state provider & auth contexts
+│   │   ├── hooks/                 # Engine hooks (useSamvaadEngine, useWebRTC)
 │   │   ├── pages/                 # MultiCallRoom, Dashboard, LandingPage & app views
 │   │   ├── services/              # API & signaling client services
 │   │   ├── utils/                 # WebRTC & MediaPipe helper utilities
@@ -1530,8 +1530,8 @@ Linzo-Meet
 ├── server/
 │   ├── src/
 │   │   ├── config/                # Engine environment thresholds (engineConfig.js)
-│   │   ├── engine/                # Linzo Semantic Engine (5-Stage Unified Orchestration)
-│   │   │   ├── LinzoSemanticEngine.js         # Core orchestrator loop
+│   │   ├── engine/                # Samvaad AI Semantic Engine (5-Stage Unified Orchestration)
+│   │   │   ├── Samvaad AISemanticEngine.js         # Core orchestrator loop
 │   │   │   ├── FeatureEncoders.js            # Modality encoders (Speech, Landmark, Text, Spatial)
 │   │   │   ├── CanonicalSemanticEvent.js     # Standardized canonical semantic schema
 │   │   │   ├── EventSerializer.js            # Binary/JSON schema validator & serializer
@@ -1553,7 +1553,7 @@ Linzo-Meet
 │   └── package.json
 │
 ├── docs/
-│   └── LINZO_SEMANTIC_ENGINE.md   # Linzo Semantic Engine architecture & API guide
+│   └── SAMVAAD_SEMANTIC_ENGINE.md   # Samvaad AI Semantic Engine architecture & API guide
 ├── .gitignore                     # Tracks ML model binaries while ignoring node_modules & secrets
 └── README.md                      # Architecture documentation & deployment guide
 ```
@@ -1619,9 +1619,9 @@ Linzo-Meet
 ## Clone Repository
 
 ```bash
-git clone https://github.com/<username>/Linzo-Meet.git
+git clone https://github.com/<username>/Samvaad-AI.git
 
-cd Linzo-Meet
+cd Samvaad-AI
 ```
 
 ---
@@ -1872,7 +1872,7 @@ Optimizations
 
 # 🔌 Platform Integration
 
-Linzo exposes REST APIs and SDK interfaces allowing integration with existing communication platforms.
+Samvaad AI exposes REST APIs and SDK interfaces allowing integration with existing communication platforms.
 
 Supported integrations
 
@@ -1998,7 +1998,7 @@ Merge
 
 # ❤️ Vision
 
-Linzo is more than a communication application.
+Samvaad AI is more than a communication application.
 
 It is an attempt to redefine how people interact across differences in language, disability, and communication ability.
 
@@ -2006,7 +2006,7 @@ Every architectural decision is guided by one belief:
 
 > **Communication should never decide who gets an opportunity.**
 
-By transforming communication into a semantic-first, accessibility-native infrastructure, Linzo aims to make every conversation truly inclusive.
+By transforming communication into a semantic-first, accessibility-native infrastructure, Samvaad AI aims to make every conversation truly inclusive.
 
 ---
 
@@ -2022,7 +2022,7 @@ By transforming communication into a semantic-first, accessibility-native infras
 
 # 📊 Performance & Scalability
 
-Linzo is engineered for low-latency, real-time multimodal communication where every participant may communicate through a different modality simultaneously.
+Samvaad AI is engineered for low-latency, real-time multimodal communication where every participant may communicate through a different modality simultaneously.
 
 ## Performance Optimizations
 
@@ -2055,7 +2055,7 @@ Semantic Encoding
 Unified Semantic State
         │
         ▼
-Linzo Orchestration Engine
+Samvaad AI Orchestration Engine
         │
         ▼
 Context Management
@@ -2080,12 +2080,12 @@ Voice  Avatar   Translation   Braille
 sequenceDiagram
 
 participant User A
-participant Linzo Client
+participant Samvaad AI Client
 participant Semantic Engine
 participant User B
 
-User A->>Linzo Client: Speech / Sign / Text / Eye Gaze
-Linzo Client->>Semantic Engine: Semantic Representation
+User A->>Samvaad AI Client: Speech / Sign / Text / Eye Gaze
+Samvaad AI Client->>Semantic Engine: Semantic Representation
 Semantic Engine->>Semantic Engine: Context Fusion
 Semantic Engine-->>User B: Personalized Output
 ```
@@ -2125,7 +2125,7 @@ G[Input Processing]
 
 G --> H[Unified Semantic Representation]
 
-H --> I[Linzo Orchestration Engine]
+H --> I[Samvaad AI Orchestration Engine]
 
 I --> J[Voice]
 
@@ -2188,7 +2188,7 @@ D --> I
 
 # 🏛 Engineering Principles
 
-Linzo is engineered around a set of core architectural principles that ensure scalability, extensibility, and accessibility by design.
+Samvaad AI is engineered around a set of core architectural principles that ensure scalability, extensibility, and accessibility by design.
 
 ## Semantic-first Communication
 
@@ -2228,7 +2228,7 @@ Every major component exposes standardized interfaces, enabling SDKs, browser ex
 
 # 📈 Comparison
 
-| Capability | Linzo | Zoom | Google Meet | Microsoft Teams |
+| Capability | Samvaad AI | Zoom | Google Meet | Microsoft Teams |
 |------------|:-----:|:----:|:-----------:|:---------------:|
 | Video Calling | ✅ | ✅ | ✅ | ✅ |
 | AI Meeting Summaries | ✅ | Limited | Limited | ✅ |
@@ -2248,11 +2248,11 @@ Every major component exposes standardized interfaces, enabling SDKs, browser ex
 
 # 🧪 Validation
 
-The development of Linzo has been continuously refined through user engagement and iterative feedback.
+The development of Samvaad AI has been continuously refined through user engagement and iterative feedback.
 
 ### Community Engagement
 
-- Pilot evaluation conducted with **40 Deaf and Hard-of-Hearing students**, where **38 participants found Linzo helpful and transformative**.
+- Pilot evaluation conducted with **40 Deaf and Hard-of-Hearing students**, where **38 participants found Samvaad AI helpful and transformative**.
 - User research and feedback sessions across **10+ organizations**, including schools, NGOs, and corporate stakeholders in Nagpur, India.
 - Continuous accessibility validation with educators, accessibility advocates, and communication professionals.
 
@@ -2294,7 +2294,7 @@ Friends and families communicating naturally regardless of language or communica
 
 # 🔬 Research Directions
 
-Linzo explores several active areas of multimodal AI research.
+Samvaad AI explores several active areas of multimodal AI research.
 
 - Unified Semantic Communication
 - Multimodal Representation Learning

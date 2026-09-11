@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import logo from '../assets/linzo-logo.png';
+import logo from '../assets/samvaad-logo.png';
 
 const Navigation = () => {
   const location = useLocation();
@@ -25,7 +25,7 @@ const Navigation = () => {
       <div className="max-w-[1200px] mx-auto min-h-[60px] flex flex-col sm:flex-row justify-between items-center gap-4 py-2 sm:py-0">
         <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-6 w-full sm:w-auto">
           <Link to="/" className="text-white no-underline text-xl font-bold flex items-center gap-2">
-            <img src={logo} alt="Linzo Logo" className="w-auto h-[45px] sm:h-[55px] object-contain" />
+            <img src={logo} alt="Samvaad AI Logo" className="w-auto h-[45px] sm:h-[55px] object-contain" />
           </Link>
 
           <div className="flex gap-2 overflow-x-auto w-full sm:w-auto justify-center sm:justify-start pb-2 sm:pb-0 no-scrollbar">

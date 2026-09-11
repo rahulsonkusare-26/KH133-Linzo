@@ -1,14 +1,14 @@
 {
   "session_id": "test_session_mit_001",
-  "room_name": "linzo-accessible-summit",
+  "room_name": "samvaad-accessible-summit",
   "transcripts": [
     {
       "index": 1,
       "timestamp_ms": 1050,
       "speaker": "Rahul Sonkusare",
-      "spoken_text": "Hello everyone, welcome to the Linzo accessible meeting demonstration.",
+      "spoken_text": "Hello everyone, welcome to the Samvaad AI accessible meeting demonstration.",
       "isl_token_stream": ["HELLO", "EVERYONE", "WELCOME", "MEETING", "DEMO"],
-      "braille_ascii": ",hello everyone1 welcome to ! ,linzo accessible meet+ demonstra;n4",
+      "braille_ascii": ",hello everyone1 welcome to ! ,samvaad accessible meet+ demonstra;n4",
       "sentiment": "positive",
       "confidence": 0.96
     },

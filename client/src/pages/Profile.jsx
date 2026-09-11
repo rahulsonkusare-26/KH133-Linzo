@@ -51,7 +51,7 @@ export default function Profile() {
           <div className="flex-1 text-center md:text-left space-y-4 md:space-y-6 min-w-0">
             <div className="space-y-1">
               <h2 className="text-2xl md:text-3xl font-black text-gray-900 tracking-tight leading-none truncate">
-                {user?.name || 'Linzo User'}
+                {user?.name || 'Samvaad AI User'}
               </h2>
               <p className="text-gray-400 font-bold uppercase tracking-widest text-[10px] truncate">{user?.email}</p>
             </div>
@@ -80,7 +80,7 @@ export default function Profile() {
 
         <div className="mt-6 pt-6 border-t border-slate-100/60 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-[10px] font-bold text-slate-300 uppercase tracking-widest">
-            Linzo v2.0
+            Samvaad AI v2.0
           </p>
           <button
             onClick={logout}
