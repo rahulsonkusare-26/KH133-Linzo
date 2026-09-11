@@ -1,0 +1,9 @@
+.vercel
+node_modules/
+.env
+.DS_Store
+*.pyc
+__pycache__/
+Thumbs.db
+
+# ML models in client/public/onnx_models/ are intentionally tracked for deployment
