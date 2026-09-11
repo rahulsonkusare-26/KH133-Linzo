@@ -1,0 +1,558 @@
+/* ── Page shell ─────────────────────────────────────────────── */
+.samvaadmeet-page {
+  --samvaad-primary: #684cfe;
+  --samvaad-primary-dark: #5338d4;
+  --samvaad-emerald: #10b981;
+  --samvaad-purple: #8b5cf6;
+  position: relative;
+  min-height: 100dvh;
+  background: #f7f6fc;
+  padding-bottom: env(safe-area-inset-bottom, 0);
+  isolation: isolate;
+}
+
+/* ── Animated background layers (no mix-blend) ─────────────── */
+.samvaadmeet-bg {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.samvaadmeet-mesh {
+  position: absolute;
+  inset: -40%;
+  background:
+    radial-gradient(ellipse 55% 45% at 15% 10%, rgba(104, 76, 254, 0.22), transparent 55%),
+    radial-gradient(ellipse 50% 40% at 85% 15%, rgba(139, 92, 246, 0.18), transparent 50%),
+    radial-gradient(ellipse 45% 50% at 70% 75%, rgba(79, 70, 229, 0.14), transparent 55%),
+    radial-gradient(ellipse 40% 35% at 10% 80%, rgba(16, 185, 129, 0.1), transparent 50%),
+    radial-gradient(ellipse 60% 50% at 50% 50%, rgba(104, 76, 254, 0.08), transparent 60%);
+  animation: samvaadmeet-mesh-drift 22s ease-in-out infinite alternate;
+}
+
+@keyframes samvaadmeet-mesh-drift {
+  0% { transform: translate(0, 0) scale(1); }
+  33% { transform: translate(2%, -1.5%) scale(1.03); }
+  66% { transform: translate(-1.5%, 2%) scale(0.98); }
+  100% { transform: translate(1%, 1%) scale(1.02); }
+}
+
+.samvaadmeet-orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(72px);
+  will-change: transform;
+}
+
+.samvaadmeet-orb-1 {
+  width: 280px;
+  height: 280px;
+  top: -60px;
+  left: -40px;
+  background: rgba(104, 76, 254, 0.35);
+  animation: samvaadmeet-float-1 16s ease-in-out infinite;
+}
+
+.samvaadmeet-orb-2 {
+  width: 220px;
+  height: 220px;
+  top: 30%;
+  right: -50px;
+  background: rgba(139, 92, 246, 0.28);
+  animation: samvaadmeet-float-2 20s ease-in-out infinite;
+}
+
+.samvaadmeet-orb-3 {
+  width: 200px;
+  height: 200px;
+  bottom: 10%;
+  left: 20%;
+  background: rgba(16, 185, 129, 0.2);
+  animation: samvaadmeet-float-3 18s ease-in-out infinite;
+}
+
+@keyframes samvaadmeet-float-1 {
+  0%, 100% { transform: translate(0, 0); }
+  50% { transform: translate(30px, 40px); }
+}
+
+@keyframes samvaadmeet-float-2 {
+  0%, 100% { transform: translate(0, 0); }
+  50% { transform: translate(-35px, 25px); }
+}
+
+@keyframes samvaadmeet-float-3 {
+  0%, 100% { transform: translate(0, 0); }
+  50% { transform: translate(25px, -30px); }
+}
+
+.samvaadmeet-grid {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(104, 76, 254, 0.045) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(104, 76, 254, 0.045) 1px, transparent 1px);
+  background-size: 44px 44px;
+  mask-image: radial-gradient(ellipse 90% 70% at 50% 30%, black 10%, transparent 75%);
+  -webkit-mask-image: radial-gradient(ellipse 90% 70% at 50% 30%, black 10%, transparent 75%);
+}
+
+.samvaadmeet-noise {
+  position: absolute;
+  inset: 0;
+  opacity: 0.025;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+.samvaadmeet-wrap {
+  position: relative;
+  z-index: 1;
+}
+
+/* ── Typography & badges ────────────────────────────────────── */
+.samvaadmeet-gradient-text {
+  background: linear-gradient(135deg, #684cfe 0%, #8b5cf6 35%, #6366f1 65%, #684cfe 100%);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: samvaadmeet-gradient-shift 5s linear infinite;
+}
+
+@keyframes samvaadmeet-gradient-shift {
+  0% { background-position: 0% center; }
+  100% { background-position: 200% center; }
+}
+
+.samvaadmeet-badge {
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(104, 76, 254, 0.18);
+  box-shadow: 0 4px 20px rgba(104, 76, 254, 0.08);
+}
+
+.samvaadmeet-pill {
+  background: rgba(255, 255, 255, 0.65);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(104, 76, 254, 0.12);
+  animation: samvaadmeet-pill-in 0.6s cubic-bezier(0.16, 1, 0.3, 1) backwards;
+}
+
+.samvaadmeet-pill:nth-child(1) { animation-delay: 0.15s; }
+.samvaadmeet-pill:nth-child(2) { animation-delay: 0.22s; }
+.samvaadmeet-pill:nth-child(3) { animation-delay: 0.29s; }
+
+@keyframes samvaadmeet-pill-in {
+  from { opacity: 0; transform: translateY(8px) scale(0.95); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+/* ── Entrance & scroll reveal ─────────────────────────────── */
+@keyframes samvaadmeet-enter {
+  from { opacity: 0; transform: translateY(22px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.samvaadmeet-enter {
+  opacity: 0;
+  animation: samvaadmeet-enter 0.7s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.samvaadmeet-enter-d1 { animation-delay: 0.06s; }
+.samvaadmeet-enter-d2 { animation-delay: 0.14s; }
+.samvaadmeet-enter-d3 { animation-delay: 0.22s; }
+.samvaadmeet-enter-d4 { animation-delay: 0.32s; }
+.samvaadmeet-enter-d5 { animation-delay: 0.42s; }
+
+.samvaadmeet-reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition:
+    opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1),
+    transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.samvaadmeet-reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.samvaadmeet-reveal-delay-1 { transition-delay: 0.08s; }
+.samvaadmeet-reveal-delay-2 { transition-delay: 0.16s; }
+.samvaadmeet-reveal-delay-3 { transition-delay: 0.24s; }
+
+/* ── Stats card — glass + shimmer border ────────────────────── */
+.samvaadmeet-surface {
+  position: relative;
+  background: rgba(255, 255, 255, 0.78);
+  backdrop-filter: blur(20px) saturate(160%);
+  -webkit-backdrop-filter: blur(20px) saturate(160%);
+  border: 1px solid rgba(255, 255, 255, 0.9);
+  box-shadow:
+    0 0 0 1px rgba(104, 76, 254, 0.06),
+    0 8px 40px -12px rgba(104, 76, 254, 0.18),
+    0 2px 8px rgba(15, 23, 42, 0.04);
+  overflow: hidden;
+}
+
+.samvaadmeet-surface::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 1px;
+  background: linear-gradient(
+    135deg,
+    rgba(104, 76, 254, 0.35),
+    rgba(139, 92, 246, 0.15),
+    rgba(16, 185, 129, 0.2),
+    rgba(104, 76, 254, 0.35)
+  );
+  background-size: 300% 300%;
+  animation: samvaadmeet-border-shimmer 6s ease infinite;
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+}
+
+@keyframes samvaadmeet-border-shimmer {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+
+.samvaadmeet-surface-glow {
+  position: absolute;
+  top: -40%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  height: 60%;
+  background: radial-gradient(ellipse, rgba(104, 76, 254, 0.12), transparent 70%);
+  pointer-events: none;
+}
+
+.samvaadmeet-stat-chip {
+  background: rgba(255, 255, 255, 0.7);
+  border: 1px solid rgba(104, 76, 254, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: samvaadmeet-chip-in 0.55s cubic-bezier(0.16, 1, 0.3, 1) backwards;
+}
+
+.samvaadmeet-stat-chip:nth-child(1) { animation-delay: 0.35s; }
+.samvaadmeet-stat-chip:nth-child(2) { animation-delay: 0.45s; }
+.samvaadmeet-stat-chip:nth-child(3) { animation-delay: 0.55s; }
+
+@keyframes samvaadmeet-chip-in {
+  from { opacity: 0; transform: translateY(12px) scale(0.92); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+@media (hover: hover) {
+  .samvaadmeet-stat-chip:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(104, 76, 254, 0.12);
+  }
+}
+
+.samvaadmeet-stat-number {
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.03em;
+  transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.samvaadmeet-stat-number.bump {
+  transform: scale(1.08);
+}
+
+.samvaadmeet-bar-track {
+  background: rgba(104, 76, 254, 0.08);
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.samvaadmeet-bar-fill {
+  height: 100%;
+  border-radius: 999px;
+  transition: width 1s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 0 12px rgba(104, 76, 254, 0.25);
+}
+
+.samvaadmeet-skeleton {
+  background: linear-gradient(90deg, #eceaf5 25%, #f8f7fc 50%, #eceaf5 75%);
+  background-size: 200% 100%;
+  animation: samvaadmeet-skeleton 1.4s ease-in-out infinite;
+  border-radius: 0.5rem;
+}
+
+@keyframes samvaadmeet-skeleton {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+/* ── Action cards ───────────────────────────────────────────── */
+.samvaadmeet-action-card {
+  position: relative;
+  min-height: 3.25rem;
+  overflow: hidden;
+  transition:
+    transform 0.32s cubic-bezier(0.16, 1, 0.3, 1),
+    box-shadow 0.32s ease,
+    border-color 0.32s ease;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.samvaadmeet-action-card::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(105deg, transparent 40%, rgba(255, 255, 255, 0.35) 50%, transparent 60%);
+  transform: translateX(-120%);
+  transition: transform 0.6s ease;
+  pointer-events: none;
+}
+
+@media (hover: hover) {
+  .samvaadmeet-action-card:hover {
+    transform: translateY(-4px);
+    box-shadow:
+      0 20px 40px -12px rgba(104, 76, 254, 0.22),
+      0 8px 16px -8px rgba(15, 23, 42, 0.08);
+  }
+
+  .samvaadmeet-action-card:hover::after {
+    transform: translateX(120%);
+  }
+
+  .samvaadmeet-action-card:hover .samvaadmeet-action-icon {
+    transform: scale(1.1) rotate(-3deg);
+  }
+}
+
+.samvaadmeet-action-card:active {
+  transform: scale(0.98);
+  transition-duration: 0.1s;
+}
+
+.samvaadmeet-action-icon {
+  transition: transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.samvaadmeet-action-primary {
+  background: linear-gradient(135deg, #684cfe 0%, #5a3de8 40%, #6366f1 70%, #684cfe 100%);
+  background-size: 200% 200%;
+  animation: samvaadmeet-btn-gradient 4s ease infinite;
+  box-shadow:
+    0 8px 32px -4px rgba(104, 76, 254, 0.55),
+    0 0 0 1px rgba(255, 255, 255, 0.15) inset;
+}
+
+@keyframes samvaadmeet-btn-gradient {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+
+.samvaadmeet-action-glass {
+  background: rgba(255, 255, 255, 0.72);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(104, 76, 254, 0.12);
+}
+
+.samvaadmeet-action-outline {
+  background: rgba(255, 255, 255, 0.65);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(104, 76, 254, 0.2);
+}
+
+/* ── Count pop & live dot ───────────────────────────────────── */
+@keyframes samvaadmeet-count-pop {
+  0% { transform: scale(1); }
+  40% { transform: scale(1.025); }
+  100% { transform: scale(1); }
+}
+
+.samvaadmeet-count-pop {
+  animation: samvaadmeet-count-pop 0.5s ease-out;
+}
+
+@keyframes samvaadmeet-live-pulse {
+  0%, 100% { opacity: 1; box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.5); }
+  50% { opacity: 0.85; box-shadow: 0 0 0 6px rgba(16, 185, 129, 0); }
+}
+
+.samvaadmeet-live-dot {
+  animation: samvaadmeet-live-pulse 2.2s ease-in-out infinite;
+}
+
+/* ── Modal ──────────────────────────────────────────────────── */
+@keyframes samvaadmeet-fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes samvaadmeet-sheet-up {
+  from { opacity: 0; transform: translateY(100%); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes samvaadmeet-modal-up {
+  from { opacity: 0; transform: translateY(24px) scale(0.97); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+.samvaadmeet-modal-backdrop {
+  animation: samvaadmeet-fade-in 0.25s ease-out forwards;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+}
+
+.samvaadmeet-modal-panel {
+  animation: samvaadmeet-sheet-up 0.38s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  box-shadow: 0 -8px 40px rgba(104, 76, 254, 0.15);
+}
+
+@media (min-width: 640px) {
+  .samvaadmeet-modal-panel {
+    animation: samvaadmeet-modal-up 0.35s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    box-shadow: 0 24px 64px rgba(104, 76, 254, 0.18);
+  }
+}
+
+.samvaadmeet-success-icon {
+  animation: samvaadmeet-success-pop 0.55s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+@keyframes samvaadmeet-success-pop {
+  0% { opacity: 0; transform: scale(0.4) rotate(-10deg); }
+  100% { opacity: 1; transform: scale(1) rotate(0); }
+}
+
+/* ── Form ───────────────────────────────────────────────────── */
+.samvaadmeet-profile-pill label {
+  transition: border-color 0.2s ease, background 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+  min-height: 3.5rem;
+}
+
+.samvaadmeet-profile-pill label:active {
+  transform: scale(0.99);
+}
+
+.samvaadmeet-profile-pill input:checked + label {
+  border-color: var(--samvaad-primary);
+  background: rgba(104, 76, 254, 0.06);
+  box-shadow: 0 0 0 3px rgba(104, 76, 254, 0.1);
+}
+
+.samvaadmeet-profile-radio {
+  flex-shrink: 0;
+}
+
+.samvaadmeet-input {
+  font-size: 16px;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.samvaadmeet-input:focus {
+  box-shadow: 0 0 0 4px rgba(104, 76, 254, 0.12);
+}
+
+@media (min-width: 640px) {
+  .samvaadmeet-input { font-size: 0.9375rem; }
+}
+
+.samvaadmeet-cta-btn {
+  min-height: 3rem;
+  font-size: 1rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.samvaadmeet-cta-btn:not(:disabled):hover {
+  box-shadow: 0 8px 24px rgba(104, 76, 254, 0.35);
+}
+
+/* ── Reduced motion ─────────────────────────────────────────── */
+@media (prefers-reduced-motion: reduce) {
+  .samvaadmeet-mesh,
+  .samvaadmeet-orb,
+  .samvaadmeet-gradient-text,
+  .samvaadmeet-action-primary,
+  .samvaadmeet-surface::before,
+  .samvaadmeet-live-dot,
+  .samvaadmeet-pill,
+  .samvaadmeet-stat-chip {
+    animation: none !important;
+  }
+
+  .samvaadmeet-enter,
+  .samvaadmeet-reveal,
+  .samvaadmeet-modal-backdrop,
+  .samvaadmeet-modal-panel,
+  .samvaadmeet-success-icon,
+  .samvaadmeet-stat-number.bump,
+  .samvaadmeet-count-pop {
+    animation: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+}
+
+/* ── Google Pay style success tick animation ────────────────── */
+@keyframes gpay-circle-bounce {
+  0% { transform: scale(0.3); opacity: 0; }
+  50% { transform: scale(1.1); }
+  70% { transform: scale(0.95); }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+@keyframes gpay-check-draw {
+  to { stroke-dashoffset: 0; }
+}
+
+@keyframes gpay-ripple {
+  0% { transform: scale(0.8); opacity: 0.5; }
+  100% { transform: scale(1.6); opacity: 0; }
+}
+
+.gpay-circle {
+  animation: gpay-circle-bounce 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+}
+
+.gpay-check {
+  stroke-dasharray: 50;
+  stroke-dashoffset: 50;
+  animation: gpay-check-draw 0.4s cubic-bezier(0.4, 0, 0.2, 1) 0.55s forwards;
+}
+
+.gpay-ripple-1 {
+  position: absolute;
+  inset: -12px;
+  border-radius: 50%;
+  border: 2px solid #10b981;
+  opacity: 0;
+  animation: gpay-ripple 1.6s cubic-bezier(0.1, 0.8, 0.3, 1) infinite;
+  pointer-events: none;
+}
+
+.gpay-ripple-2 {
+  position: absolute;
+  inset: -12px;
+  border-radius: 50%;
+  border: 2px solid #10b981;
+  opacity: 0;
+  animation: gpay-ripple 1.6s cubic-bezier(0.1, 0.8, 0.3, 1) infinite;
+  animation-delay: 0.8s;
+  pointer-events: none;
+}
+
