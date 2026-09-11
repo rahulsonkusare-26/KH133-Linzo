@@ -1,0 +1,26 @@
+{
+  "session_id": "test_session_mit_001",
+  "room_name": "linzo-accessible-summit",
+  "transcripts": [
+    {
+      "index": 1,
+      "timestamp_ms": 1050,
+      "speaker": "Rahul Sonkusare",
+      "spoken_text": "Hello everyone, welcome to the Linzo accessible meeting demonstration.",
+      "isl_token_stream": ["HELLO", "EVERYONE", "WELCOME", "MEETING", "DEMO"],
+      "braille_ascii": ",hello everyone1 welcome to ! ,linzo accessible meet+ demonstra;n4",
+      "sentiment": "positive",
+      "confidence": 0.96
+    },
+    {
+      "index": 2,
+      "timestamp_ms": 5200,
+      "speaker": "Sarang Kadukar",
+      "spoken_text": "Thank you Rahul. Real-time sign language recognition and tactile feedback are now active.",
+      "isl_token_stream": ["THANK_YOU", "RAHUL", "SIGN", "LANGUAGE", "HAPTIC", "ACTIVE"],
+      "braille_ascii": ",?ank you ,rahul4 ,real-time sign language recogni;n & tactile feedback >e now active4",
+      "sentiment": "enthusiastic",
+      "confidence": 0.98
+    }
+  ]
+}

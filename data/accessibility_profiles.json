@@ -1,0 +1,40 @@
+{
+  "profiles": [
+    {
+      "id": "profile_dhh_sign",
+      "name": "Deaf / Hard-of-Hearing (Sign Language First)",
+      "settings": {
+        "avatar_enabled": true,
+        "avatar_speed": 1.0,
+        "captions_enabled": true,
+        "caption_font_size": "1.25rem",
+        "haptic_alerts": true,
+        "vibration_patterns": {
+          "speaker_change": [150, 50, 150],
+          "hand_raised": [200, 100, 200]
+        }
+      }
+    },
+    {
+      "id": "profile_blind_braille",
+      "name": "Blind / Low Vision (Tactile & Audio)",
+      "settings": {
+        "screen_reader_verbosity": "high",
+        "high_contrast_theme": "dark_slate",
+        "braille_output": true,
+        "braille_grade": 1,
+        "audio_chimes": true
+      }
+    },
+    {
+      "id": "profile_neuro_inclusive",
+      "name": "Neurodivergent / Cognitive Ease",
+      "settings": {
+        "reduced_motion": true,
+        "aac_symbol_grid": true,
+        "distraction_free_mode": true,
+        "auto_summary_interval_min": 10
+      }
+    }
+  ]
+}

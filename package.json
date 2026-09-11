@@ -1,0 +1,25 @@
+{
+  "name": "linzo-mit",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Linzo - AI-Powered Adaptive, Inclusive & Accessible Video Meeting Platform",
+  "scripts": {
+    "dev:client": "npm run dev --prefix client",
+    "dev:server": "npm run dev --prefix server",
+    "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\"",
+    "build:client": "npm run build --prefix client",
+    "install:all": "npm install && npm install --prefix client && npm install --prefix server",
+    "start": "node server/src/index.js"
+  },
+  "keywords": [
+    "webrtc",
+    "accessibility",
+    "sign-language",
+    "ai",
+    "isl",
+    "braille",
+    "inclusive-meetings"
+  ],
+  "author": "Linzo Team (Rahul Rushi Sonkusare, Sarang Kadukar)",
+  "license": "MIT"
+}

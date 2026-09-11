@@ -1,0 +1,40 @@
+{
+  "dataset": "Linzo-ISL-Vocabulary-v1",
+  "language": "Indian Sign Language (ISL)",
+  "total_tokens": 30,
+  "modalities": ["fingerspelling", "word_signs"],
+  "alphabet": {
+    "A": { "hand": "dominant", "landmark_count": 21, "orientation": "palm_forward", "confidence_min": 0.85 },
+    "B": { "hand": "dominant", "landmark_count": 21, "orientation": "palm_forward", "confidence_min": 0.85 },
+    "C": { "hand": "dominant", "landmark_count": 21, "orientation": "palm_side", "confidence_min": 0.80 },
+    "D": { "hand": "dominant", "landmark_count": 21, "orientation": "palm_forward", "confidence_min": 0.85 },
+    "E": { "hand": "dominant", "landmark_count": 21, "orientation": "palm_forward", "confidence_min": 0.80 },
+    "F": { "hand": "dominant", "landmark_count": 21, "orientation": "palm_forward", "confidence_min": 0.85 },
+    "G": { "hand": "dominant", "landmark_count": 21, "orientation": "palm_side", "confidence_min": 0.85 },
+    "H": { "hand": "dominant", "landmark_count": 21, "orientation": "palm_side", "confidence_min": 0.85 },
+    "I": { "hand": "dominant", "landmark_count": 21, "orientation": "palm_forward", "confidence_min": 0.90 },
+    "J": { "hand": "dominant", "landmark_count": 21, "motion": "curve_down", "confidence_min": 0.80 },
+    "K": { "hand": "dominant", "landmark_count": 21, "orientation": "palm_forward", "confidence_min": 0.85 },
+    "L": { "hand": "dominant", "landmark_count": 21, "orientation": "palm_forward", "confidence_min": 0.90 },
+    "M": { "hand": "dominant", "landmark_count": 21, "orientation": "palm_down", "confidence_min": 0.80 },
+    "N": { "hand": "dominant", "landmark_count": 21, "orientation": "palm_down", "confidence_min": 0.80 },
+    "O": { "hand": "dominant", "landmark_count": 21, "orientation": "palm_side", "confidence_min": 0.85 },
+    "P": { "hand": "dominant", "landmark_count": 21, "orientation": "palm_down", "confidence_min": 0.80 },
+    "Q": { "hand": "dominant", "landmark_count": 21, "orientation": "palm_down", "confidence_min": 0.80 },
+    "R": { "hand": "dominant", "landmark_count": 21, "orientation": "palm_forward", "confidence_min": 0.85 },
+    "S": { "hand": "dominant", "landmark_count": 21, "orientation": "fist_forward", "confidence_min": 0.85 },
+    "T": { "hand": "dominant", "landmark_count": 21, "orientation": "palm_forward", "confidence_min": 0.80 },
+    "U": { "hand": "dominant", "landmark_count": 21, "orientation": "palm_forward", "confidence_min": 0.85 },
+    "V": { "hand": "dominant", "landmark_count": 21, "orientation": "palm_forward", "confidence_min": 0.90 },
+    "W": { "hand": "dominant", "landmark_count": 21, "orientation": "palm_forward", "confidence_min": 0.85 },
+    "X": { "hand": "dominant", "landmark_count": 21, "orientation": "hooked_index", "confidence_min": 0.80 },
+    "Y": { "hand": "dominant", "landmark_count": 21, "orientation": "thumb_pinky", "confidence_min": 0.90 },
+    "Z": { "hand": "dominant", "landmark_count": 21, "motion": "zigzag_air", "confidence_min": 0.80 }
+  },
+  "core_phrases": [
+    { "token": "HELLO", "duration_ms": 600, "two_handed": false },
+    { "token": "THANK_YOU", "duration_ms": 700, "two_handed": false },
+    { "token": "YES", "duration_ms": 500, "two_handed": false },
+    { "token": "NO", "duration_ms": 500, "two_handed": false }
+  ]
+}
