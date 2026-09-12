@@ -1531,7 +1531,7 @@ Samvaad-AI
 │   ├── src/
 │   │   ├── config/                # Engine environment thresholds (engineConfig.js)
 │   │   ├── engine/                # Samvaad AI Semantic Engine (5-Stage Unified Orchestration)
-│   │   │   ├── Samvaad AISemanticEngine.js         # Core orchestrator loop
+│   │   │   ├── SamvaadSemanticEngine.js         # Core orchestrator loop
 │   │   │   ├── FeatureEncoders.js            # Modality encoders (Speech, Landmark, Text, Spatial)
 │   │   │   ├── CanonicalSemanticEvent.js     # Standardized canonical semantic schema
 │   │   │   ├── EventSerializer.js            # Binary/JSON schema validator & serializer
