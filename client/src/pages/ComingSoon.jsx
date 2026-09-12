@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import api from '../lib/api';
 import logo from '../assets/samvaad-logo.png';
-import './Samvaad AIMeetPage.css';
+import './SamvaadMeetPage.css';
 
 function useAnimatedNumber(value) {
   const [display, setDisplay] = useState(value);

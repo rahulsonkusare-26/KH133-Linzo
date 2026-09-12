@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate, useLocation, Outlet } from 'react-router-dom';
 import api from '../lib/api';
-import Samvaad AILogo from '../assets/samvaad-logo.png';
+import SamvaadLogo from '../assets/samvaad-logo.png';
 
 const MainLayout = () => {
     const [user, setUser] = useState(null);
@@ -62,7 +62,7 @@ const MainLayout = () => {
                 {/* Logo Area */}
                 <div className="hidden md:flex flex-col items-center mb-8 gap-3">
                     <div className="p-2 px-3 cursor-pointer" onClick={() => navigate('/')}>
-                        <img src={Samvaad AILogo} alt="Samvaad AI" className="h-15 w-auto object-contain" />
+                        <img src={SamvaadLogo} alt="Samvaad AI" className="h-15 w-auto object-contain" />
                     </div>
                 </div>
 
@@ -116,7 +116,7 @@ const MainLayout = () => {
 
                     {/* Mobile Logo */}
                     <div className="flex md:hidden items-center gap-2 cursor-pointer" onClick={() => navigate('/')}>
-                        <img src={Samvaad AILogo} alt="Samvaad AI" className="h-14 w-auto object-contain" />
+                        <img src={SamvaadLogo} alt="Samvaad AI" className="h-14 w-auto object-contain" />
                     </div>
 
                     <div className="bg-white backdrop-blur-xl border border-gray-200 px-4 py-2 rounded-full flex items-center gap-4 shadow-sm">

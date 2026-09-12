@@ -487,7 +487,7 @@ const LandingPage = () => {
                     {/* Bottom bar */}
                     <div className="pt-8 border-t border-slate-100 flex flex-col items-center md:flex-row md:justify-between gap-4">
                         <p className="text-slate-400 text-xs sm:text-sm text-center md:text-left">
-                            &copy; {new Date().getFullYear()} Samvaad AI Adaptive Communication. All rights reserved.
+                            &copy; {new Date().getFullYear()} LINZO Adaptive Communication. All rights reserved.
                         </p>
                         <div className="flex flex-wrap justify-center gap-4 sm:gap-6 text-xs sm:text-sm text-slate-400">
                             <a href="#" className="hover:text-slate-600 transition-colors">Privacy Policy</a>
